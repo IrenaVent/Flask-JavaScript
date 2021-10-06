@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kakebo</title>
+    <link rel="stylesheet" href="/static/css/flat-remix.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+    <script src="/static/js/spa.js"> </script>
+</head>
+<body>
+    <header>
+        <p>Bienvenid@ a KAK&#x02211;BO</p>
+    </header>
+    <section class="contenedor">
+        <h1>Movimientos</h1>
+        <article>
+            <button id="btn-alta">Nuevo</button>
+            <table class="paper">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Concepto</th>
+                        <th>I/G</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos"> 
+                    <!-- aqui es donde vamos a enganchar y meter todos los datos con javascript -->
+                </tbody>
+            </table>
+        </article>
+    <article>
+        <form id="formulario-movimiento" class="inactivo">
+            <div class="campo-formulario">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">   
+            </div>
+            <div class="campo-formulario">
+                <label for="concepto">Concepto:</label>
+                <input type="text" name="concepto" id="concepto">
+            </div>
+            <div class="campo-formulario">
+                <input type="radio" name="ingreso_gasto" id="ingreso" value="I"><span class="label">Ingreso</span>  
+                <input type="radio" name="ingreso_gasto" id="gasto" value="G"><span class="label">Gasto</span>
+            </div>
+            <div class="campo-formulario">
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" name="cantidad" id="cantidad">
+            </div>
+
+            <input id ="btn-enviar" name="submit" class="blue-button" type="submit" value="Enviar">
+        </form>
+    </article>
+    </section>
+    <footer>
+        <p>© 2021 | Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
